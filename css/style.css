@@ -1,0 +1,134 @@
+/* Подключение шрифтов */
+@font-face {
+	font-family: "Muller";
+	src: url("../fonts/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular.woff2") format("woff2");
+  font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: url("../fonts/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium.woff2") format("woff2");
+  font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Muller";
+	src: url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.woff2") format("woff2");
+  font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* База */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0 ;
+  list-style: none;
+}
+
+/* Общие */
+body {
+  min-width: 1200px;
+  font-family: "Muller", sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 35px 0;
+  width: 1170px;
+}
+
+.btn {
+  padding: 12px 19px;
+  border: 1px solid #c93;
+  border-radius: 10px;
+  color: #c93;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* header */
+.upper-floor {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upper-floor__top {
+  display: flex;
+  align-items: center;
+}
+
+.upper-floor__link {
+  margin-right: 40px;
+  font-size: 0;
+}
+
+.phone-link {
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+}
+
+.acc-link {
+  padding-left: 31px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #c93;
+  background-image: url(../img/Arrow-header.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.upper-floor__down {
+  padding: 14px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.upper-floor__list {
+  display: flex;
+  gap: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+}
+
+.upper-floor__clickers {
+  display: flex;
+  gap: 40px;
+}

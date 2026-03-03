@@ -543,7 +543,66 @@
     </section>
 
     <section class="booking">
+      <div class="container">
+        <h2 class="section-title">
+          Хочу тур
+        </h2>
 
+        <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <label class="booking-form__wrap" for="city">
+            Город вылета
+            <select class="booking-form__select" name="departure-city" id="city">
+              <option value="St_Petersburg">
+                Санкт-Петербург
+              </option>
+
+              <option value="Moscow">
+                Москва
+              </option>
+
+              <option value="Krasnodar">
+                Краснодар
+              </option>
+            </select>
+          </label>
+
+          <label class="booking-form__wrap" for="country">
+            Страна
+            <select class="booking-form__select" name="country" id="country">
+              <option value="Russia">
+                Россия
+              </option>
+
+              <option value="Australia">
+                Австралия
+              </option>
+
+              <option value="New Zeland">
+                Новая Зеландия
+              </option>
+            </select>
+          </label>
+
+          <label class="booking-form__wrap" for="date">
+            Дата прибытия
+            <input class="booking-form__input" type="date" name="date" id="date" required>
+          </label>
+
+          <label class="booking-form__wrap" for="period">
+            Ночей
+            <input class="booking-form__input" type="number" name="period" id="period" min="1" max="7" step="1" value="2" required>
+          </label>
+
+          <label class="booking-form__wrap" for="quantity">
+            Туристы
+            <input class="booking-form__input" type="number" name="quantity" id="quantity" min="1" max="4" step="1" value="2" required>
+          </label>
+
+          <button class="btn booking-form__btn" type="submit">
+            Найти
+          </button>
+        </form>
+      </div>
     </section>
 
     <section class="contacts" id="contacts">
@@ -625,8 +684,48 @@
     </section>
   </main>
 
-  <footer class="basement">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__about">
+        <p class="footer__info">
+          &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+        </p>
 
+        <p class="footer__reference">
+          Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой
+        </p>
+
+        <a class="footer__link" href="docs/agreement.docs" download="Соглашение">
+          Пользовательское соглашение
+        </a>
+      </div>
+
+      <div class="footer__contacts">
+        <address class="footer__location">
+          11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+        </address>
+
+        <a class="footer__phone" href="tel:+74995356434">
+          +7 499 535-64-34
+        </a>
+
+        <a class="footer__phone" href="tel:+74950050544">
+          +7 495 005-05-44
+        </a>
+
+        <a class="footer__mail" href="mailto:lg.oona@mail.ru">
+          lg.oona@mail.ru
+        </a>
+
+        <a class="footer__mail" href="mailto:hotels.ln@mail.ru">
+          hotels.ln@mail.ru
+        </a>
+      </div>
+
+      <div class="footer__social">
+
+      </div>
+    </div>
   </footer>
 </body>
 </html>

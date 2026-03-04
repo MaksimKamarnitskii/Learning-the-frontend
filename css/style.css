@@ -82,31 +82,37 @@ body {
 }
 
 /* header */
-.upper-floor {
-  padding-top: 30px;
+.header__top {
   display: flex;
-  flex-direction: column;
   gap: 30px;
-}
-
-.upper-floor__top {
-  display: flex;
   align-items: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
 }
 
-.upper-floor__link {
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 45px;
+  border-radius: 15px;
+  font-size: 0;
+  background-color: #fff;
+}
+
+.header__logo {
   margin-right: 40px;
   font-size: 0;
 }
 
-.phone-link {
+.header__phone {
   margin-right: auto;
   font-size: 20px;
   font-weight: 500;
   color: #666;
 }
 
-.acc-link {
+.header__account {
   padding-left: 29px;
   font-size: 16px;
   font-weight: 400;
@@ -116,25 +122,25 @@ body {
   background-position: left center;
 }
 
-.upper-floor__down {
-  padding: 14px 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0;
-  border-radius: 15px;
-  background-color: #fff;
-}
-
-.upper-floor__list {
+.nav__list {
   display: flex;
   gap: 45px;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   color: #666;
 }
 
-.upper-floor__clickers {
+.nav__list::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  background-color: #e1e1e1;
+  margin: 0;
+}
+
+.header__actions {
   display: flex;
   gap: 40px;
 }

@@ -251,7 +251,7 @@ body {
 }
 
 /* about */
-.unit-about__descr {
+.about__descr {
   margin: 0;
   max-width: 890px;
   font-size: 16px;
@@ -260,15 +260,18 @@ body {
 }
 
 /* service */
-.unit-service {
-  display: flex;
-  flex: 1 1 auto;
-  flex-wrap: wrap;
+.services__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
 
-.unit-service__card {
+.services__item {
   display: flex;
+}
+
+.service-card {
+  display: inherit;
   flex-direction: column;
   justify-content: flex-end;
   padding: 26px 126px 35px 45px;
@@ -280,37 +283,37 @@ body {
   background-repeat: no-repeat;
 }
 
-.unit-service__card--bg1 {
+.service-card--serv {
   background-image: url(../img/service-bg1.png);
 }
 
-.unit-service__card--bg2 {
+.service-card--rent {
   background-image: url(../img/service-bg2.png);
 }
 
-.unit-service__card--bg3 {
+.service-card--recreation {
   background-image: url(../img/service-bg3.png);
 }
 
-.unit-service__card--bg4 {
+.service-card--parking {
   background-image: url(../img/service-bg4.png);
 }
 
-.unit-service__details {
-  /* display: inline-flex; */
-  width: fit-content;
+.service-card__title {
+  display: inline-flex;
+  align-self: flex-start;
+  margin: 0;
   padding-right: 1em;
-}
-
-.unit-service__title {
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
   color: #c93;
-  margin: 0;
+  background-image: url(../img/Arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
-.unit-service__descr {
+.service-card__descr {
   margin: 0;
   max-width: 400px;
   font-size: 16px;
